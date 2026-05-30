@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E133523499F6F65CF655F1D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027771C93C0A07E3BEE56487 /* App.swift */; };
+		72573FD251D758B6B7F1664D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905BCC315FE8120727AA898 /* ContentView.swift */; };
+		CA79B02E3F1A595B487248F6 /* SpeakSwiftlyMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE270EFA519D92FF3C0A7608 /* SpeakSwiftlyMobileTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E70CD6792026DD0B62B0CDBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61756BDF05DC37EAB3EAB5CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 979CC01FC9D5E8D7D0A11162;
+			remoteInfo = SpeakSwiftlyMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027771C93C0A07E3BEE56487 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		5905BCC315FE8120727AA898 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE270EFA519D92FF3C0A7608 /* SpeakSwiftlyMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakSwiftlyMobileTests.swift; sourceTree = "<group>"; };
+		DF372D4DD32FDDF789730F59 /* SpeakSwiftlyMobile.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SpeakSwiftlyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB711A4F19A7A3C31992862D /* SpeakSwiftlyMobileTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpeakSwiftlyMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		40927E95014D2509126F646E /* SpeakSwiftlyMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE270EFA519D92FF3C0A7608 /* SpeakSwiftlyMobileTests.swift */,
+			);
+			name = SpeakSwiftlyMobileTests;
+			path = SpeakSwiftlyMobileTests;
+			sourceTree = "<group>";
+		};
+		6D927AD5D34BB455BD4A2504 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D0430C5E769572DE51093F93 /* App */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		8C5ED3CADA332560CB4AE042 = {
+			isa = PBXGroup;
+			children = (
+				6D927AD5D34BB455BD4A2504 /* App */,
+				DCAC78BB172989F2553FB5DE /* Tests */,
+				E47910961952766615FA997A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0430C5E769572DE51093F93 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				027771C93C0A07E3BEE56487 /* App.swift */,
+				5905BCC315FE8120727AA898 /* ContentView.swift */,
+			);
+			name = App;
+			path = Sources/App;
+			sourceTree = "<group>";
+		};
+		DCAC78BB172989F2553FB5DE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				40927E95014D2509126F646E /* SpeakSwiftlyMobileTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E47910961952766615FA997A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF372D4DD32FDDF789730F59 /* SpeakSwiftlyMobile.app */,
+				FB711A4F19A7A3C31992862D /* SpeakSwiftlyMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E13C4431D57437B5C5A7BF7 /* SpeakSwiftlyMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFE14ECF223D23D92F1DEC8 /* Build configuration list for PBXNativeTarget "SpeakSwiftlyMobileTests" */;
+			buildPhases = (
+				D85F7ACB98AECB2774DC14EA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD0EC08E375CF07CA15E624E /* PBXTargetDependency */,
+			);
+			name = SpeakSwiftlyMobileTests;
+			packageProductDependencies = (
+			);
+			productName = SpeakSwiftlyMobileTests;
+			productReference = FB711A4F19A7A3C31992862D /* SpeakSwiftlyMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		979CC01FC9D5E8D7D0A11162 /* SpeakSwiftlyMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C96DBF2C241D00EFF638A5D /* Build configuration list for PBXNativeTarget "SpeakSwiftlyMobile" */;
+			buildPhases = (
+				B75CDDB2CEAD860F6A51CDAA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeakSwiftlyMobile;
+			packageProductDependencies = (
+			);
+			productName = SpeakSwiftlyMobile;
+			productReference = DF372D4DD32FDDF789730F59 /* SpeakSwiftlyMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61756BDF05DC37EAB3EAB5CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 42430B2A25D59D4B54CA784C /* Build configuration list for PBXProject "SpeakSwiftlyMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8C5ED3CADA332560CB4AE042;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E47910961952766615FA997A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				979CC01FC9D5E8D7D0A11162 /* SpeakSwiftlyMobile */,
+				1E13C4431D57437B5C5A7BF7 /* SpeakSwiftlyMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B75CDDB2CEAD860F6A51CDAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E133523499F6F65CF655F1D /* App.swift in Sources */,
+				72573FD251D758B6B7F1664D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85F7ACB98AECB2774DC14EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA79B02E3F1A595B487248F6 /* SpeakSwiftlyMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD0EC08E375CF07CA15E624E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 979CC01FC9D5E8D7D0A11162 /* SpeakSwiftlyMobile */;
+			targetProxy = E70CD6792026DD0B62B0CDBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17C6574620CB4E9C2285EF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.galewilliams.SpeakSwiftlyMobile;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AC2FEC7E8946990DB0DD689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.galewilliams.SpeakSwiftlyMobile;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C7155F83347DAFDF7464D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3302F49565DAA2A7F8CBDDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeakSwiftlyMobile.app/SpeakSwiftlyMobile";
+			};
+			name = Release;
+		};
+		A0ED84C5C060A75806D148E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B138BC459E5AF9570D32CF52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeakSwiftlyMobile.app/SpeakSwiftlyMobile";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C96DBF2C241D00EFF638A5D /* Build configuration list for PBXNativeTarget "SpeakSwiftlyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C6574620CB4E9C2285EF19 /* Debug */,
+				1AC2FEC7E8946990DB0DD689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		42430B2A25D59D4B54CA784C /* Build configuration list for PBXProject "SpeakSwiftlyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C7155F83347DAFDF7464D93 /* Debug */,
+				A0ED84C5C060A75806D148E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EFE14ECF223D23D92F1DEC8 /* Build configuration list for PBXNativeTarget "SpeakSwiftlyMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B138BC459E5AF9570D32CF52 /* Debug */,
+				3302F49565DAA2A7F8CBDDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61756BDF05DC37EAB3EAB5CE /* Project object */;
+}

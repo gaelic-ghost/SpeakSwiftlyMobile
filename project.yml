@@ -1,0 +1,29 @@
+name: SpeakSwiftlyMobile
+options:
+  minimumXcodeGenVersion: 2.39.0
+targets:
+  SpeakSwiftlyMobile:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/App
+        group: App
+    info:
+      path: Sources/Support/Info.plist
+      properties:
+        CFBundleDisplayName: SpeakSwiftlyMobile
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.galewilliams.SpeakSwiftlyMobile
+        SWIFT_VERSION: "5.0"
+    scheme:
+      testTargets:
+        - SpeakSwiftlyMobileTests
+  SpeakSwiftlyMobileTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/SpeakSwiftlyMobileTests
+        group: Tests
+    dependencies:
+      - target: SpeakSwiftlyMobile
