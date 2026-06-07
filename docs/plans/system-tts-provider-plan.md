@@ -73,6 +73,32 @@ Evaluate three runtime paths before picking the first model:
 
 For the first working slice, choose one small model, one voice, one sample rate, and one render format. A broader model catalog should come after the system provider can render reliably with one local model.
 
+## Model Candidate Order
+
+Start with Piper.
+
+The current exploration order is:
+
+1. Piper
+
+   Piper is the first implementation target because it is tiny enough for a default mobile model, has many existing voices, and has the most practical custom-voice training story. The first pass should try one English Piper voice and decide whether ONNX-to-Core ML conversion, ExecuTorch, or a lightweight ONNX runtime is the cleanest iOS provider-extension path.
+
+2. Pocket TTS
+
+   Pocket TTS is the second target if its Core ML package can be customized or conditioned in a way that supports a user-created voice. Its Core ML packaging is attractive for iOS, but the customization path needs proof before it can displace Piper as the first slice.
+
+3. Parler TTS
+
+   Parler is the longer-running quality and fine-tuning track. It is attractive for cloud or MacBook-assisted training and PEFT-style experimentation, but it is too heavy and uncertain for the first system-provider implementation.
+
+These are all intended to be tried eventually. The first app milestone should still optimize for getting one Piper voice rendering through the system TTS provider before broadening the catalog.
+
+## Cross-Project macOS Follow-Up
+
+Separately from SpeakSwiftlyMobile, evaluate Qwen3 TTS Core ML for the macOS `SpeakSwiftly` runtime after the active macOS streamlining work is clear. The hypothesis is that a Core ML Qwen3 path might use Apple Neural Engine acceleration, especially if an 8-bit or 4-bit quantized package is practical.
+
+That investigation belongs in the macOS `SpeakSwiftly` repository, not in the iOS provider extension. Do not edit the active `SpeakSwiftly` worktree for this note while another agent is handling stage one.
+
 ## Model Delivery Direction
 
 Use App Store-managed asset delivery for large model packs when possible.
@@ -136,9 +162,12 @@ Verify that the voice appears through system speech APIs and accessibility speec
 ## Open Questions
 
 - Which iOS version should be the minimum once the provider extension and Core ML model requirements are tested?
-- Which small Core ML TTS model is the first target, and what are its text input, acoustic output, sample rate, and latency constraints?
+- For Piper, what are the model's text input, acoustic output, sample rate, runtime requirements, and conversion constraints?
+- Can Pocket TTS be customized enough to support Gale-created voices, or is it mainly a fixed-voice Core ML path?
+- Which Parler fine-tuning route is realistic for Gale's MacBook Pro versus cloud training?
 - Can `optimum-executorch` produce a Core ML-delegated or otherwise iOS-friendly artifact for the selected TTS model, or is a direct Core ML conversion simpler?
 - Does Gale's `mlx-audio-swift` fork have a practical iOS runtime and resource story, and does it outperform a Core ML path for the chosen small model?
+- For macOS `SpeakSwiftly`, can Qwen3 TTS Core ML use Apple Neural Engine effectively with 8-bit or 4-bit quantization?
 - Can the extension read app-installed model assets from an app group container, or should the first slice ship one bundled model inside the extension?
 - Which minimum iOS version is acceptable if Background Assets becomes the primary model-delivery mechanism?
 - How much `TextForSpeech` profile editing belongs in the mobile app before system voice rendering is proven?
